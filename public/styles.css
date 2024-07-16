@@ -190,3 +190,7 @@ footer p{
   background-color: rgb(243, 62, 62);
   box-shadow: 0px 0px;
 }
+
+#answer-container{
+  white-space: pre-wrap;
+}

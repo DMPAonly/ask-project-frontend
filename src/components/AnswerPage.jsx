@@ -26,7 +26,7 @@ function AnswerPage(props){
     }
 
     return <div>
-            <p>{props.answer}</p>
+            <p id="answer-container">{props.answer}</p>
             <p className="author-container">Answered by - {props.a_author}</p>
             {!clickGiveComment ? 
             <div>

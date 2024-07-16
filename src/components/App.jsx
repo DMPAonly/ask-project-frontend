@@ -10,7 +10,8 @@ import Footer from "./Footer";
 import HeadBar from "./HeadBar";
 
 function App(){
-    const API_URL = "http://localhost:3000";
+    //const API_URL = "http://localhost:3000";
+    const API_URL = "https://ask-project-backend.onrender.com";
 
     const [posts, setPosts] = useState([]);
     const [answerResponse, setAnswerResponse] = useState([]);
