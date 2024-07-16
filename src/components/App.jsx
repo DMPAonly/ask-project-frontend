@@ -129,7 +129,8 @@ function App(){
         try{
             const response = await axios.get(`${API_URL}/comment/${answer_id}`);
         if(response.data.length === 0){
-            alert("There are no comments on this answer currently.")
+            alert("There are no comments on this answer currently.");
+            setCommnetResponse([]);
         } else{
             setCommnetResponse(response.data);
             console.log(commentResponse);

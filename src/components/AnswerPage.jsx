@@ -13,7 +13,11 @@ function AnswerPage(props){
 
     function handleShowComment(){
         props.handleShowComment(props.id);
-        setClickShowComment(!clickShowComment);
+        if(props.comments.length === 0){
+            null;
+        } else{
+            setClickShowComment(!clickShowComment);
+        }
     }
 
     function handleCommentSubmit(comment){
@@ -40,6 +44,7 @@ function AnswerPage(props){
                         setClickShowComment(!clickShowComment);
                         console.log(props.comments);
                     }}>Close</button>
+                    <br></br>
                     {props.comments.map((comment, index) => {
                         return<CommentSection 
                         key={index} 
