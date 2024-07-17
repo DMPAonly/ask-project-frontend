@@ -11,8 +11,8 @@ import HeadBar from "./HeadBar";
 import { ThreeDots } from "react-loader-spinner";
 
 function App(){
-    const API_URL = "http://localhost:3000";
-    //const API_URL = "https://ask-project-backend.onrender.com";
+    //const API_URL = "http://localhost:3000";
+    const API_URL = "https://ask-project-backend.onrender.com";
 
     const [posts, setPosts] = useState([]);
     const [answerResponse, setAnswerResponse] = useState([]);
