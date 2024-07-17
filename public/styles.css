@@ -83,6 +83,7 @@ footer p{
   height: 100px;
   resize: none;
   padding: 5px;
+  margin: auto;
 }
 
 .author-container{
@@ -192,4 +193,63 @@ footer p{
 
 #answer-container{
   white-space: pre-wrap;
+}
+
+@media screen and (max-width: 992px){
+  .accountform{
+    width: 80%;
+  }
+
+  .label-class{
+    width: 70%;
+  }
+
+  .home-page{
+    width: 80%;
+  }
+
+  .answer-page{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .accountform{
+    width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .label-class{
+    width: 70%;
+  }
+
+  .home-page{
+    width: 100%;
+  }
+
+  #title{
+    display: none;
+  }
+
+  #welcome{
+    margin-left: 10px;
+  }
+
+  .question-form button{
+    position: static;
+  }
+
+  .question-form textarea{
+    width: 90%;
+  }
+
+  .answer-page{
+    width: 100%;
+  }
+
+  .comment-section{
+    width: 80%;
+  }
 }

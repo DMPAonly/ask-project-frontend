@@ -8,7 +8,7 @@ function HeadBar(props){
 
     return <div className="HeadBar">
         <h2 id="title">Ask_project ?</h2>
-        <h2>Welcome {props.user}</h2>
+        <h2 id="welcome">Welcome {props.user}</h2>
         <button type="button" onClick={LogOut}>Logout</button>
     </div>
 }
